@@ -1,9 +1,79 @@
-h1{
-  color: red;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c89999;
 }
 
-
-img{
-  width: 100px;
-  height: 50px
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
+.content {
+  background-color: #e5dddd;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.random-section {
+  margin-bottom: 30px;
+}
+
+.random-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.random-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #181717;
+}
+
+.refresh-button {
+  background-color: #c89999;
+  color: #fff;
+  border: none;
+  padding: 40px 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: #aec3d9;
+}
+
+/* Additional styles for separate containers */
+.fact-container,
+.student-container,
+.image-container {
+  background-color: #c89999;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Add margin-right to create space between containers */
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Flex container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Arrange containers horizontally */
+}
+
