@@ -1,29 +1,51 @@
-{% load static%}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'styles.css'%}">
-  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <title>Random Facts</title>
 </head>
 <body>
 
-  <!-- Using CSS, style the random fact, Random Student, & Random Image -->
-  <!-- Use your own colors create cards for the random facts and students,  -->
-  <!-- Pro Tip: You can use multiple pages -->
-  <!-- Pro Tip: Impliment a  refresh/reload button in every page  -->
-  <h1>Random Fact</h1>
-  {{fact}}
+<div class="container">
+  <!-- Content -->
+  <div class="content">
+    <!-- Refresh button -->
+    <button class="refresh-button" onclick="location.reload()">Refresh</button>
+    
+    <div class="flex-container">
+      <div class="random-section">
+        <div class="fact-container">
+          <h1>Random Fact</h1>
+          <p>{{ fact }}</p>
+        </div>
+      </div>
 
-  <h1>Random Student</h1>
-  {{name}}
+      <div class="random-section">
+        <div class="student-container">
+          <h1>Random Student</h1>
+          <p>{{ name }}</p>
+        </div>
+      </div>
 
+      <div class="random-section">
+        <div class="image-container">
+          <h1>Random Image</h1>
+          <img src="{{ dog }}" alt="Random Dog Image">
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h1>Random Image</h1>
-
-  <img src="{{dog}}" alt="">
-  <!-- {{dog}} -->
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 solo Website</p>
+  </footer>
+</div>
+  
 </body>
 </html>
