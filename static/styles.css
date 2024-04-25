@@ -1,9 +1,35 @@
-h1{
-  color: red;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dgrey%2Bbackground&psig=AOvVaw3rDml42NLCsbE12kHWFaw9&ust=1714149548918000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKC5sOPm3YUDFQAAAAAdAAAAABAE");
+  /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover;
+  background-position: center;
+}
 
-img{
-  width: 100px;
-  height: 50px
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #333;
+  /* Text color */
+}
+
+hi {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 17px;
 }
