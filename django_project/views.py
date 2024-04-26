@@ -25,5 +25,6 @@ def quote(request):
 
 def text(request):
     text = util.generate_text()
-    rendering = {"text": text}
+    student = util.generate_students()
+    rendering = {"text": text, "student": student}
     return render(request, "text.html", rendering)
