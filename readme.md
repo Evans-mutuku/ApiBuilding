@@ -6,12 +6,14 @@ Whether you're a teacher looking to spice up classroom activities or an event or
 - Html, Css, Bootstrap, Django.
 ### Features
 - Simple, Clean and beautiful ui
-- stocks lookup
+- Real time stock analysis
 - Meme Generation
 - Random Text Generation
   
 
 ![GemiStudent](https://github.com/habert-kungu/ApiBuilding/assets/147383053/a9466ef3-9540-4e58-a407-10d03137aca2)
+
+/home/habert/Pictures/Screenshots/Screenshot from 2024-04-26 09-28-39.png
 
 
 ### How to run
