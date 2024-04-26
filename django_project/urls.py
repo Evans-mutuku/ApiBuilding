@@ -23,4 +23,8 @@ from . import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name="index"),
+    path("image/", views.image, name="image"),
+    path("memes/", views.memes, name="memes"),
+    path("quote/", views.quote, name="quote"),
+    path("text/", views.text, name="text"),
 ]
