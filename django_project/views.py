@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from . import util
+
 
 def index(request):
     return render(request, "index.html")
@@ -18,4 +20,6 @@ def quote(request):
 
 
 def text(request):
-    return render(request, "text.html")
+    text = util.generate_text()
+    rendering = {"text": text}
+    return render(request, "text.html", rendering)
