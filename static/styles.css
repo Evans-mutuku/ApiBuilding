@@ -1,9 +1,25 @@
-h1{
-  color: red;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f2f2f2;
 }
 
+#welcome-heading {
+  font-size: 2.5em;
+  color: #333;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 45px;
+  margin-top: 100px;
+}
 
-img{
-  width: 100px;
-  height: 50px
+.welcome-text {
+  font-size: 1.2em;
+  color: #666;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  max-width: 50%;
+  word-wrap: break-word;
 }

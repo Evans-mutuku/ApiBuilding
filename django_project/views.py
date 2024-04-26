@@ -1,20 +1,32 @@
-import requests
-from django.shortcuts import render 
+from django.shortcuts import render
+
+from . import util
+
 
 def index(request):
-  response = requests.get('https://uselessfacts.jsph.pl/random.json?language=en')
-  data = response.json()
-  fact = data['text']
+    return render(request, "index.html")
 
-  r3 = requests.get('https://dog.ceo/api/breeds/image/random')
-  res3 = r3.json()
-  dog = res3['message']
 
-  # This is the assignment for the Hackathon, 
-  # Instructions: 
-  # Use this API and randomize the students
-  response2 = requests.get('https://freetestapi.com/api/v1/students') # Use this API
-  data2 = response2.json()
-  name = data2[0]['name']
-  
-  return render(request, 'templates/index.html', {'fact': fact, 'dog': dog,  'name': name})
+def image(request):
+    image = util.generate_images()
+    rendering = {"image": image}
+    return render(request, "image.html", rendering)
+
+
+def memes(request):
+    memes = util.get_jokes()
+    student = util.generate_students()
+    rendering = {"memes": memes, "student": student}
+    return render(request, "memes.html", rendering)
+
+
+# quote just renders more info on quote.html
+def quote(request):
+    return render(request, "quote.html")
+
+
+def text(request):
+    text = util.generate_text()
+    student = util.generate_students()
+    rendering = {"text": text, "student": student}
+    return render(request, "text.html", rendering)
