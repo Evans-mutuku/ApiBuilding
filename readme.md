@@ -1,3 +1,2 @@
-## Hackathon Instructions
+Did initially nit understand what a blog website was (/U0001F602)
 
-Make sure to use the comments in the files to complete the hackathon
