@@ -3,12 +3,12 @@
 {%block body%}
 
 {% block container%}
-<h1> Welcome To GemiStudent<h1>
-<p>GemiStudent is your ultimate destination for effortless random 
-  student selection and engagement.</p>
-<p>Whether you're a teacher looking to spice up classroom activities
-  or an event organizer seeking a fair way to pick participants</p>
-<p> StudentGenie has you covered.</p>
+    <h1 id="welcome-heading">Welcome to Gemistudent</h1>
+<p class="welcome-text">Gemistudent is your ultimate destination for effortless random student selection and engagement.</p>
+<p class="welcome-text">Whether you're a teacher looking to spice up classroom activities or an event organizer seeking a fair way to pick participants, Gemistudent has you covered.</p>
+
+<a href="{% url "memes"%}" class="btn btn-primary btn-lg mt-4 m-3">Get Started</a>
+
 {% endblock %}
 {% endblock %}
 

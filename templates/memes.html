@@ -1,2 +1,17 @@
-{% extends "layout.html" %} {% load static%} {%block body%} {% block container%}
-{% endblock %} {% endblock %}
+{% extends "layout.html" %} {% load static%} {%block body%}
+<div class="container my-5">
+  <!-- Adding margin to the top and bottom -->
+  <div class="card m-2 border-0 shadow-lg rounded" style="max-width: 80rem">
+    <!-- Adding margin around the card -->
+    <img class="card-img-top" src="..." alt="Card image cap" style="height: 300px; object-fit: cover" />
+    <div class="card-body">
+      <h5 class="card-title text-center mb-4">Meme Generator</h5>
+      <p class="card-text text-center"></p>
+      <div class="text-center">
+        <a href="#" class="btn btn-primary btn-lg mt-4">Generate</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% block container%} {% endblock %} {% endblock %}
