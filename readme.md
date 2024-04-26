@@ -1,3 +1,3 @@
-## Hackathon Instructions
+Did initially not understand what a blog website was.
 
-Make sure to use the comments in the files to complete the hackathon
+Also included weather app here
