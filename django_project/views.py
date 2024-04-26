@@ -12,9 +12,13 @@ def image(request):
 
 
 def memes(request):
-    return render(request, "memes.html")
+    memes = util.get_jokes()
+    student = util.generate_students()
+    rendering = {"memes": memes, "student": student}
+    return render(request, "memes.html", rendering)
 
 
+# quote just renders more info on quote.html
 def quote(request):
     return render(request, "quote.html")
 
