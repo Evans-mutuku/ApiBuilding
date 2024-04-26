@@ -19,6 +19,8 @@ Whether you're a teacher looking to spice up classroom activities or an event or
 
 **Text**
 ![Screenshot from 2024-04-26 10-13-37](https://github.com/habert-kungu/ApiBuilding/assets/147383053/a03bcb58-9a79-4614-9cdf-5f4a8fe0d6fb)
+**Developer's Memes Page**
+![Screenshot from 2024-04-26 10-39-07](https://github.com/habert-kungu/ApiBuilding/assets/147383053/6433f50b-a70c-43a7-86d8-bfe8bea49cc6)
 
 ### How to run
 Please follow the following steps to ensure that you run website smoothly
