@@ -8,7 +8,9 @@ def index(request):
 
 
 def image(request):
-    return render(request, "image.html")
+    image = util.generate_images()
+    rendering = {"image": image}
+    return render(request, "image.html", rendering)
 
 
 def memes(request):

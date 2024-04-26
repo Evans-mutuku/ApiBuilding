@@ -21,10 +21,10 @@ def generate_text():
 
 
 def generate_images():
-    response = make_api_request("https://dog.ceo/api/breeds/image/random")
-    if response:
-        dog = response["message"]
-        return dog
+    r3 = requests.get("https://dog.ceo/api/breeds/image/random")
+    res3 = r3.json()
+    dog = res3["message"]
+    return dog
 
 
 def generate_students():
@@ -33,6 +33,8 @@ def generate_students():
         names = [student["name"] for student in response]
         random.shuffle(names)
         return names[0]  # Return a random shuffled name
+    else:
+        raise requests.exceptions.HTTPError("Students not found")
 
 
 def get_jokes():
