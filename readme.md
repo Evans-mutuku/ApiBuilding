@@ -13,8 +13,8 @@ Whether you're a teacher looking to spice up classroom activities or an event or
 
 ![GemiStudent](https://github.com/habert-kungu/ApiBuilding/assets/147383053/a9466ef3-9540-4e58-a407-10d03137aca2)
 
-/home/habert/Pictures/Screenshots/Screenshot from 2024-04-26 09-28-39.png
 
+![Screenshot from 2024-04-26 09-28-39](https://github.com/habert-kungu/ApiBuilding/assets/147383053/fe216d41-9826-473f-98c1-c5899448a4fd)
 
 ### How to run
 Please follow the following steps to ensure that you run website smoothly
