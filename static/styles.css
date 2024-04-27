@@ -1,9 +1,187 @@
-h1{
+/* Resetting default margin and padding */
+body, h1, p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: aqua;
+  color: #000000;
+  line-height: 1.6;
+}
+.copy-p{
+  padding: 1px;
+  margin-top: 10px;
+  position: fixed;
+  color: white;
+  background: transparent;
+  font-size: smaller;
+  left: 3px;
+  transition: font-size 0.3s, line-height 0.3s; 
+  line-height: 1.2; 
+
+}
+.copy-p:hover{
+  font-size: calc(1em + 2px); 
+  cursor: pointer;
+  line-height: 1;
   color: red;
+
+}
+
+/* Headline styles */
+.title{
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  margin-bottom: 19px;
+  padding : 27px
+  
+  
+  
+}
+
+h1 {
+  font-size: 36px;
+  color: #007bff;
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  text-align: center;
+  
+
+}
+
+/* News item styles */
+.news-item {
+  margin: 20px;
+}
+
+.news-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 13px;
+  margin-top: 16px;
+}
+.news-item:hover{
+  background-color: #00aeff;
 }
 
 
-img{
-  width: 100px;
-  height: 50px
+.news-item p {
+  margin-bottom: 5px;
+  margin: 14px;
+}
+.news-item p:hover {
+  font-size: larger;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin: 14px;
+}
+
+
+.news-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+  color: deeppink;
+}
+
+/* Random section styles */
+.random {
+  margin-top: 40px;
+  padding: 17px;
+}
+
+.random-headers{
+  padding: 30px;
+}
+
+.image-header{
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  margin: 50px;
+  font-size: 39px;
+}
+
+.image-header:hover{
+  color: purple;
+  background-color: aqua;
+  font-size: xx-large;
+  cursor: pointer;
+
+}
+
+.random-headers:hover{
+  color: purple;
+  background-color: aqua;
+  font-size: xx-large;
+  cursor: pointer;
+
+}
+.random:hover{
+  background-color: #0a4441;
+}
+
+.random h2 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.random h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
+.random p {
+  margin-bottom: 10px;
+
+}
+.random p:hover {
+  color: #000000;
+  font-size: larger;
+  
+}
+.image-tag{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.random img {
+  margin: auto;
+  
+  display: flex;
+  padding: 15px;
+  border: palevioletred ;
+
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin: top 10px;
+  font-size: 14px;
+  color: #0a4441;;
+  background-color: black;
+  transition: font-size 0.3s, line-height 0.3s; 
+  line-height: 1.2;
+}
+.footer:hover{
+  line-height: 1.5;
+  color: white;
+  
 }
