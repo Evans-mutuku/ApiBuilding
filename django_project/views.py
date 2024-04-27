@@ -1,20 +1,46 @@
+from django.shortcuts import render
 import requests
-from django.shortcuts import render 
+from newsapi import NewsApiClient
 
-def index(request):
-  response = requests.get('https://uselessfacts.jsph.pl/random.json?language=en')
-  data = response.json()
-  fact = data['text']
+def news_index(request):   
+  # Initialize NewsApiClient with your API key
+    newsapi = NewsApiClient(api_key=
+      '42c6eaee15e644f0879f7f1274b479c2') # Fetch top headlines
+    top_headlines = newsapi.get_top_headlines(language='en', page_size=5)
 
-  r3 = requests.get('https://dog.ceo/api/breeds/image/random')
-  res3 = r3.json()
-  dog = res3['message']
+    # Extract relevant news data
+    latest_news = []
+    for article in top_headlines['articles']:
+        headline = article['title']
+        description = article['description']
+        source = article['source']['name']
+        url = article['url']  # Get the URL of the article
+        latest_news.append({
+            'headline': headline, 
+            'source': source,
+            'url': url, 
+            'description': description
+        })
 
-  # This is the assignment for the Hackathon, 
-  # Instructions: 
-  # Use this API and randomize the students
-  response2 = requests.get('https://freetestapi.com/api/v1/students') # Use this API
-  data2 = response2.json()
-  name = data2[0]['name']
-  
-  return render(request, 'templates/index.html', {'fact': fact, 'dog': dog,  'name': name})
+    # Fetch data from other APIs
+    r1 = requests.get('https://api.github.com/events')
+    events = r1.json()[0]['repo']
+
+    r2 = requests.get('https://www.boredapi.com/api/activity')
+    activity = r2.json()['activity']
+
+    r3 = requests.get('https://dog.ceo/api/breeds/image/random')
+    dog = r3.json()['message']
+
+    # Prepare context data
+    context = {
+        'title': 'Welcome to myNews_API Portal',
+        'latest_news': latest_news,
+        'events': events,
+        'activity': activity,
+        'dog': dog
+    }
+
+    # Render the template with context data
+    return render(request, 'news_index.html', context)
+
